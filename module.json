@@ -1,0 +1,13 @@
+{
+    "name": "Subsidiary",
+    "alias": "subsidiary",
+    "description": "",
+    "keywords": [],
+    "order": 0,
+    "providers": [
+        "Modules\\Subsidiary\\Providers\\SubsidiaryServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

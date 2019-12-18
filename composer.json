@@ -1,0 +1,25 @@
+{
+    "name": "nwidart/subsidiary",
+    "description": "",
+    "authors": [
+        {
+            "name": "Nicolas Widart",
+            "email": "n.widart@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\Subsidiary\\Providers\\SubsidiaryServiceProvider"
+            ],
+            "aliases": {
+                
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\Subsidiary\\": ""
+        }
+    }
+}
