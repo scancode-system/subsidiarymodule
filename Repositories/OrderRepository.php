@@ -20,6 +20,10 @@ class OrderRepository
 		foreach ($subsidiaries_id as $subsidiary_id) 
 		{
 			$subsidiary = Subsidiary::find($subsidiary_id);
+			if(!$subsidiary)
+			{
+				$subsidiary = (object)['id' => 0, 'name' => 'SEM FILIAL'];
+			}
 			$subsidiary->items = $items_grouped_by_subsidiaries[$subsidiary_id];
 
 			$total_gross = 0;
