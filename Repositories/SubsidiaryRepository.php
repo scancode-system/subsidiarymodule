@@ -8,6 +8,10 @@ class SubsidiaryRepository
 {
 
 	// LOAD
+	public static function loadByName($name){
+		return Subsidiary::where('name', $name)->first();
+	}
+
 	public static function loadToSelect($value, $description){
 		return Subsidiary::pluck($description, $value);
 	}
@@ -15,7 +19,7 @@ class SubsidiaryRepository
 
 	// SAVE
 	public static function store($data){
-		Subsidiary::create($data);
+		return Subsidiary::create($data);
 	}
  
 

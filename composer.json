@@ -1,5 +1,5 @@
 {
-    "name": "nwidart/subsidiary",
+    "name": "scancode-system/subsidiary-module",
     "description": "",
     "authors": [
         {
@@ -21,5 +21,6 @@
         "psr-4": {
             "Modules\\Subsidiary\\": ""
         }
-    }
+    },
+    "type": "laravel-module"
 }

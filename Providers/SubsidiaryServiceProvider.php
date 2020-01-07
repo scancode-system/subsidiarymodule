@@ -29,6 +29,7 @@ class SubsidiaryServiceProvider extends ServiceProvider
         $this->app->register(ViewComposerServiceProvider::class);
         $this->app->register(RelationshipServiceProvider::class);
         $this->app->register(ObserverServiceProvider::class);
+        $this->app->register(EventServiceProvider::class);
     }
 
 
