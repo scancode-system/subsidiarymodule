@@ -13,10 +13,12 @@ class AfterImportProductListener
     {
         $product = $event->product();
         $data = $event->data();
-        $subsidiary = $this->subsidiaryId($data['subsidiary_id'], $data['subsidiary_name']);
-        if($subsidiary)
-        {
-            $product->subsidiaries()->sync([$subsidiary->id]);
+        if(isset($data['subsidiary_name'])){
+            $subsidiary = $this->subsidiaryId($data['subsidiary_id'], $data['subsidiary_name']);
+            if($subsidiary)
+            {
+                $product->subsidiaries()->sync([$subsidiary->id]);
+            }
         }
     }
 
