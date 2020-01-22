@@ -64,6 +64,9 @@
 <table class="w-50 m-auto">
 	<tr>
 		<td class="border-bottom border-dark height-75">
+			@if($order->signature_check)
+			<img src="data:image/png;base64, {{ $order->signature }}" width="100%"/>
+			@endif
 		</td>
 	</tr>
 </table>
