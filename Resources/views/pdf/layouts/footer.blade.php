@@ -44,7 +44,7 @@
 	<tr>
 		<td class="border border-dark p-2">
 			<strong>OBSERVAÇÔES:</strong><br>
-			<p class="p-0 mb-0">{!! nl2br($setting_order->global_observation) !!}</p>
+			<p class="p-0 mb-0">{!! nl2br($setting_pdf->global_observation) !!}</p>
 			@if(!is_null($order->observation))
 			<p class="mb-0 mt-3">{{ $order->observation }}</p>
 			@endif
@@ -55,7 +55,7 @@
 	<tr>
 		<td class="border border-dark p-2">
 			<strong>TERMODE RESPONSABILIDADE:</strong><br>
-			<p class="mb-0">{!! nl2br($setting_order->statement_responsibility) !!}</p>
+			<p class="mb-0">{!! nl2br($setting_pdf->statement_responsibility) !!}</p>
 		</td>
 	</tr>
 </table>
