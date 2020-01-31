@@ -24,6 +24,10 @@
 		overflow: hidden;
 		page-break-after: always;
 	}
+
+	thead{display: table-header-group;}
+	tfoot {display: table-row-group;}
+	tr {page-break-inside: avoid;}
 </style>
 
 @foreach($subsidiaries as $subsidiary)
